@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    <div id="calc">
+        <h1 id="heading">CALCULATOR</h1>
+        <input id="screen"></input><br>
+        <table>
+            <tr>
+                <input type="button" value="CE" onclick="clearscreen()" />
+                <input type="button" value="&#40" onclick="show('&#40')" />
+                <input type="button" value="&#41" onclick="show('&#41')" />
+                <input type="button" value="/" onclick="show('/')" />
+            </tr><br>
+            <tr>
+                <input type="button" value="7" onclick="show('7')" />
+                <input type="button" value="8" onclick="show('8')" />
+                <input type="button" value="9" onclick="show('9')" />
+                <input type="button" value="*" onclick="show('*')" />
+            </tr><br>
+            <tr>
+                <input type="button" value="5" onclick="show('5')" />
+                <input type="button" value="6" onclick="show('6')" />
+                <input type="button" value="7" onclick="show('7')" />
+                <input type="button" value="-" onclick="show('-')" />
+            </tr><br>
+            <tr>
+                <input type="button" value="1" onclick="show('1')" />
+                <input type="button" value="2" onclick="show('2')" />
+                <input type="button" value="3" onclick="show('3')" />
+                <input type="button" value="+" onclick="show('+')" />
+            </tr><br>
+            <tr>
+                <input type="button" value="0" onclick="show('0')" />
+                <input type="button" value="00" onclick="show('00')" />
+                <input type="button" value="." onclick="show('.')" />
+                <input id="equalBtn" style="background-color:chocolate;font-weight: bolder;border: 3px solid white;" type="button" value="=" onclick="calculate()" />
+            </tr>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
